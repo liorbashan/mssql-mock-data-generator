@@ -1,6 +1,6 @@
-import { MSsqlConfig } from './../../types/MSsqlConfig';
+import { TableColumn } from './../../types/MSsqlConfig';
 import { Table } from 'mssql';
 
 export interface IMSsqlTableBuilder {
-    buildMssqlTable(config: MSsqlConfig): Table;
+    buildMssqlTable(tableName: string, amountOfRecords: number, tableColumns: TableColumn[]): Table;
 }

@@ -19,7 +19,7 @@ export const dbConfig: MSsqlConfig = {
         },
     },
     tableName: 'MOCK_BI_Data_Segments',
-    amountOfRecords: 80000,
+    amountOfRecords: 10000,
     tableColumns: [
         {
             columnName: 'CID',
